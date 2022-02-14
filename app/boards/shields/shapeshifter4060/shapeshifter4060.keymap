@@ -24,8 +24,23 @@
             &kp ESC   &kp Q    &kp D    &kp R     &kp W     &kp B               &kp J     &kp F   &kp U     &kp P    &kp SEMI &kp DEL
             &kp TAB   &kp A    &kp S    &kp H     &kp T     &kp G               &kp Y     &kp N   &kp E     &kp O    &kp I    &kp SQT
             &kp LSHFT &kp Z    &kp X    &kp M     &kp C     &kp V               &kp K     &kp L   &kp COMMA &kp DOT  &kp BSLH &kp RET
-            &kp LCTRL &kp LGUI &kp LALT &kp BSPC  &kp DEL  &bt BT_NXT         &kp RET &kp SPACE &kp LEFT  &kp UP &kp DOWN   &kp RIGHT
+            &kp LCTRL &kp LGUI &kp LALT &kp BSPC  &kp DEL  &mo 1         &kp RET &kp SPACE &kp LEFT  &kp UP &kp DOWN   &kp RIGHT
 			>;
+        };
+
+        workman_layer_raise {
+            // ----------------------------------------------------------------------------------------------------------
+            // |  ESC  |  1   |  2   |  3   |  4   |  5   |-------|-------|   6   |  7    |  8   |  9   |   0   | BSPC  |
+            // |  TAB  |  Q   |  W   |  E   |  R   |  T   |-------|-------|   Y   |  U    |  I   |  O   |   P   |  \    |
+            // | SHIFT |  A   |  S   |  D   |  F   |  G   |-------|-------|   H   |  J    |  K   |  L   |   ;   |  '    |
+            // | CTRL  |  Z   |  X   |  C   |  V   |  B   |-------|-------|   N   |  M    |  ,   |  .   |   /   | ENTER |
+            // |-------|ADJUST| LCTL | LALT | LGUI | LOWR | SPACE | SPACE |  RAIS | LARW | DARW | UARW  | RARW  |-------|
+            bindings = <
+            &kp ESC   &kp Q    &kp D    &kp R     &kp W     &kp B               &kp J     &kp F   &kp U     &kp P    &kp SEMI &kp DEL
+            &kp TAB   &bt BT_PRV  &bt BT_NXT   &bt BT_CLR   &kp T     &kp G               &kp Y     &kp N   &kp E     &kp O    &kp I    &kp SQT
+            &kp LSHFT &kp Z    &kp X    &kp M     &kp C     &kp V               &kp K     &kp L   &kp COMMA &kp DOT  &kp BSLH &kp RET
+            &kp LCTRL &kp LGUI &kp LALT &kp BSPC  &kp DEL  &bt BT_NXT         &kp RET &kp SPACE &kp LEFT  &kp UP &kp DOWN   &kp RIGHT
+            >;
         };
 
         default_layer {
